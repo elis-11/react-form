@@ -1,48 +1,61 @@
-import "./App.css";
 import { useState } from "react";
-import Multiplier from "./components/Multiplier";
-import Substracht from "./components/Substracht";
-import Adder from "./components/Adder";
-import Divider from "./components/Divider";
+import "./App.css";
+import CounterComp from "./components/CounterComp";
+import ResultComp from "./components/ResultComp";
 
-function App(props) {
+function App() {
   const [counter1, setCounter1] = useState(0);
-  const [counter2, setCounter2] = useState(0);
-  const increment1 = () => {
+  const increaseCounter1 = () => {
     setCounter1(counter1 + 1);
   };
-  const increment2 = () => {
-    setCounter2(counter2 + 1);
-  };
-  const decrement1 = () => {
+  const decreaseCounter1 = () => {
     setCounter1(counter1 - 1);
   };
-  const decrement2 = () => {
+  const [counter2, setCounter2] = useState(0);
+  const increaseCounter2 = () => {
+    setCounter2(counter2 + 1);
+  };
+  const decreaseCounter2 = () => {
     setCounter2(counter2 - 1);
   };
+  const addResult = counter1 + counter2;
+  const subResult = counter1 - counter2;
+  const multResult = counter1 * counter2;
+  const divResult = counter1 / counter2;
+
+  const totalResult = addResult + divResult + multResult + subResult;
 
   return (
     <div className="App">
-      <div className="increment" onClick={increment1}>
-        +
+      <div>
+        <CounterComp
+          increaseCount={increaseCounter1}
+          decreaseCount={decreaseCounter1}
+          count={counter1}
+        />
+        <CounterComp
+          increaseCount={increaseCounter2}
+          decreaseCount={decreaseCounter2}
+          count={counter2}
+        />
       </div>
-      <div className="counter">{counter1}</div>
-      <div onClick={decrement1} className="decrement">
-        -
+      <div>
+        <ResultComp title="Addition" result={addResult} />
       </div>
-      <div className="increment" onClick={increment2}>
-        +
+      <div>
+        <ResultComp title="Substraction" result={subResult} />
       </div>
-      <div className="counter">{counter2}</div>
-      <div onClick={decrement2} className="decrement">
-        -
+      <div>
+        <ResultComp title="Multiplication" result={multResult} />
       </div>
-
-      <Multiplier counter1={counter1} counter2={counter2} />
-      <Adder counter1={counter1} counter2={counter2} />
-      <Substracht counter1={counter1} counter2={counter2} />
-      <Divider counter1={counter1} counter2={counter2} />
+      <div>
+        <ResultComp title="Division" result={divResult} />
+      </div>
+      <div className="total">
+        <ResultComp title="Total Result" result={totalResult} />
+      </div>
     </div>
   );
 }
+
 export default App;
