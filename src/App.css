@@ -1,3 +1,19 @@
 .App {
-  text-align: center;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App div {
+  display: flex;
+  padding: 10px;
+}
+.App div p {
+  display: flex;
+  padding: 5px;
+  font-size: 30px
+}
+.total{
+  color: red;
 }
