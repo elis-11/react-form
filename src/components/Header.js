@@ -4,6 +4,7 @@ import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    fontFamily: 'Permanent Marker',
     margin: theme.spacing(3, 0, 2),
     textAlign: "center",
     fontSize: "40px",
