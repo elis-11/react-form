@@ -3,5 +3,5 @@ import React, { createContext } from "react";
 const DataContext = createContext();
 
 export const DataProvider =({ children }) =>{
-    const []
+    const [data, setData]=useState({})
 }
