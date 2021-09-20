@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { DataProvider } from "./components/DataContext";
+import { DataProvider } from "./DataContext";
 
 ReactDOM.render(
   <React.StrictMode>
