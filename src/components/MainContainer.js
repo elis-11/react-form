@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme)=>({
         flexDirection: 'column',
         alignItems: 'center',
     },
-}))
+}))  
 
 export const MainContainer =({ children, ...props }) => {
 const styles =useStyles()
