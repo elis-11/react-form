@@ -3,6 +3,7 @@ import React from "react";
 import { MainContainer } from "./components/MainContainer";
 import { Input } from "@material-ui/core";
 import { Form } from "./components/Form";
+import { PrimaryButton } from "./components/PrimaryButton";
 
 export const Step1 = () => {
   const { register, handleSubmit, errors } = useForm({
@@ -30,6 +31,7 @@ export const Step1 = () => {
           label="Last Name"
           name="lastName"
         />
+        <PrimaryButton>Next</PrimaryButton>
       </Form>
     </MainContainer>
   );
