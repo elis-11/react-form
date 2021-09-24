@@ -31,8 +31,9 @@ export const step2 = () => {
       <Typography component="h2" variant="h5">
         Step 2
       </Typography>
-      <Form>
+      <Form onSubmit={handleSubmit(onSubmit)}>
         <Input
+        
           id="email"
           type="email"
           label="Email"
