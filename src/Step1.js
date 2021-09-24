@@ -27,6 +27,7 @@ export const Step1 = () => {
   });
 
   const onSubmit = (data) => {
+    history.push("/step2");
   };
 
   return (
