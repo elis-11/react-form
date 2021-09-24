@@ -33,7 +33,7 @@ export const step2 = () => {
       </Typography>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input
-        
+        ref={register}
           id="email"
           type="email"
           label="Email"
