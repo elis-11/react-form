@@ -1,4 +1,4 @@
-// import {yupResolver} from "@hookform/resolvers"
+import {yupResolver} from "@hookform/resolvers"
 import Typography from "@material-ui/core/Typography";
 import { useForm } from "react-hook-form";
 import { Form } from "./components/Form";
