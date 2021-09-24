@@ -1,4 +1,4 @@
-import Typography from "@material-ui/core/Typography";
+import Typography from "@material-ui/core/typography";
 import { useForm } from "react-hook-form";
 import { Form } from "./components/Form";
 import { Input } from "./components/Input";
