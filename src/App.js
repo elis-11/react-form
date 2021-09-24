@@ -15,7 +15,7 @@ function App() {
 <Header />
 <Router>
   <Switch>
-    <Route exact path="/" component={Step1}/>
+    <Route exact path="/" component={Step}/>
     {/* <Route exact path="/" component={Step1} />
     <Route  path="/step2" component={Step2} />
     <Route  path="/step3" component={Step3} />
