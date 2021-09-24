@@ -20,7 +20,7 @@ const schema = yup.object().shape({
     .required("Last Name is a required field"),
 });
 
-const Step1 = () => {
+export const Step1 = () => {
   const { register, handleSubmit, errors } = useForm({
     mode: "onBlur",
     resolver: yupResolver(schema)
@@ -59,4 +59,3 @@ const Step1 = () => {
     </MainContainer>
   );
 };
-export default Step1
