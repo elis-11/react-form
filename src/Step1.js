@@ -1,4 +1,3 @@
-import {yupResolver} from "@hookform/resolvers"
 import Typography from "@material-ui/core/Typography";
 import { useForm } from "react-hook-form";
 import { Form } from "./components/Form";
@@ -6,7 +5,8 @@ import { Input } from "./components/Input";
 import { MainContainer } from "./components/MainContainer";
 import { PrimaryButton } from "./components/PrimaryButton";
 import * as yup from 'yup';
-import { TextField } from "./components/TextField";
+// import { TextField } from "./components/TextField";
+import { yupResolver } from '@hookform/resolvers';
 
 const schema = yup.object().shape({
   firstName: yup
@@ -22,7 +22,7 @@ const schema = yup.object().shape({
 export const Step1 = () => {
   const { register, handleSubmit, errors } = useForm({
     mode: "onBlur",
-    resolver: yupResolver(schema)
+    resolver: yupResolver
   });
 
   const onSubmit = (data) => {
