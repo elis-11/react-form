@@ -1,6 +1,5 @@
-import {yupResolver} from "@hookform/resolvers"
-import Typography from "@material-ui/styles/typography";
-import React from "react";
+// import {yupResolver} from "@hookform/resolvers"
+import Typography from "@material-ui/core/Typography";
 import { useForm } from "react-hook-form";
 import { Form } from "./components/Form";
 import { Input } from "./components/Input";
