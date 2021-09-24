@@ -2,9 +2,12 @@ import Typography from "material-ui/styles/typography";
 import { Form } from "./components/Form";
 import { Input } from "./components/Input";
 import { MainContainer } from "./components/MainContainer";
+import { useForm } from 'react-hook-form';
+import { useHistory } from "react-router";
+
 
 export const step2 = () => {
-  const history = useHistory;
+  const history = useHistory();
   const { register, handleSubmit, errors, watch } = useForm({
     mode: "onBlur",
   });
