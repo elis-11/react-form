@@ -6,7 +6,7 @@ import { Input } from "./components/Input";
 import { MainContainer } from "./components/MainContainer";
 import { PrimaryButton } from "./components/PrimaryButton";
 import * as yup from 'yup';
-// import { TextField } from "./components/TextField";
+import { TextField } from "./components/TextField";
 
 const schema = yup.object().shape({
   firstName: yup
