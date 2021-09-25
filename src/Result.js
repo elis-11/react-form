@@ -68,7 +68,8 @@ export const Result = () => {
     <>
       <MainContainer>
         <Typography component="h2" variant="h5">
-          📋 Form Values
+        <span role="img" aria-label="Form Values">📋 Form Values</span>
+          {/* 📋 Form Values */}
         </Typography>
         <TableContainer className={styles.root} component={Paper}>
           <Table className={styles.table} aria-label="simple table">
@@ -93,7 +94,8 @@ export const Result = () => {
         {files && (
           <>
             <Typography component="h2" variant="h5">
-              📦 Files
+        <span role="img" aria-label="Files">   📦 Files</span>
+              {/* 📦 Files */}
             </Typography>
             <List>
               {files.map((f, index) => (
