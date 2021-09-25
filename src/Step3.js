@@ -25,8 +25,7 @@ export const Step3 = () => {
   return (
     <MainContainer>
       <Typography component="h2" variant="h5">
-      
-        <span role="img" aria-label="Unicorn">  🦄 Step 3</span>
+        <span width="100%" role="img" aria-label="Unicorn">  🦄 Step 3</span>
       </Typography>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <FileInput name="files" control={control} />
