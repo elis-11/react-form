@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const PrimaryButton = ({ children, props }) => {
+export const PrimaryButton = ({ children, ...props }) => {
   const styles = useStyles();
 
   return (
