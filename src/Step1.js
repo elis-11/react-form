@@ -1,4 +1,5 @@
-import  React from "react";
+/* eslint-disable jsx-a11y/accessible-emoji */
+import React from "react";
 import { useHistory } from "react-router-dom";
 import { useData } from "./DataContext";
 import Typography from "@material-ui/core/Typography";
@@ -38,8 +39,7 @@ export const Step1 = () => {
   return (
     <MainContainer>
       <Typography component="h2" variant="h5">
-      {/* <span role="img" aria-label="Unicorn">  🦄 Step 1</span> */}
-      🦄 Step 1
+        🦄 Step 1
       </Typography>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
