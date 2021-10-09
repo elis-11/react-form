@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 import Dropzone from "react-dropzone";
 import { Controller } from "react-hook-form";
 import { makeStyles } from "@material-ui/core/styles";

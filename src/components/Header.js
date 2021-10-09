@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
     margin: theme.spacing(3, 0, 2),
-    fontFamily: 'Permanent Marker',
+    fontFamily: "Permanent Marker",
     textAlign: "center",
     fontSize: "40px",
     color: "deeppink",
