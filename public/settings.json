@@ -1,0 +1,68 @@
+{
+    "tabnine.experimentalAutoImports": true,
+      "files.autoSave": "afterDelay",
+      "git.confirmSync": false,
+      "files.associations": {
+        "*.js": "javascriptreact"
+      },
+      "editor.minimap.enabled": false,
+      "breadcrumbs.enabled": false,
+      "editor.renderWhitespace": "none",
+      "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "liveServer.settings.donotShowInfoMsg": true,
+      "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[json]": {
+        "editor.quickSuggestions": {
+          "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "vscode.json-language-features"
+      },
+      "workbench.colorCustomizations": {
+      
+      
+        "statusBar.background" : "#1A1A1A",
+        "statusBar.noFolderBackground" : "#212121",
+        "statusBar.debuggingBackground": "#263238",
+  
+          "terminal.ansiBrightBlue":"#dac0f8",
+          "terminal.ansiGreen":"#38f5fc",
+          "terminalCursor.foreground": "#e7302a",
+          "terminal.foreground":"#3fd62b",
+          "terminal.ansiBlack":"#027399",
+          "terminal.ansiBrightBlack":"#f0e992",
+          "terminal.ansiBrightCyan":"#8BA59B",
+          "terminal.ansiBrightGreen":"#92cef7",
+          "terminal.ansiBrightMagenta":"#e42a9d",
+          "terminal.ansiBrightRed":"#c55242",
+          "terminal.ansiBrightWhite":"#FDF4C1",
+          "terminal.ansiBrightYellow":"#FAC03B",
+          "terminal.ansiBlue":"#00a1f9",
+          "terminal.ansiCyan":"#8BA59B",
+          "terminal.ansiMagenta":"#a57894",
+          "terminal.ansiRed":"#caba73",
+          "terminal.ansiWhite":"#A89984",
+          "terminal.ansiYellow":"#fae73b",
+          "terminalCursor.background": "#ff0000",
+          "terminal.background":"#1D2021",
+      },
+      "terminal.integrated.minimumContrastRatio": 1,
+      "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "git.enableSmartCommit": true,
+      "[css]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "javascript.updateImportsOnFileMove.enabled": "always",
+      "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "timeline.excludeSources": [],
+      "workbench.editor.enablePreview": false,
+      "window.zoomLevel": 1
+    }
