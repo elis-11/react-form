@@ -26,10 +26,13 @@ app.use(morgan("dev"));
 app.post("/", limiter, async (req, res) => {
   try {
     if (req.files && req.files.files) {
+      // eslint-disable-next-line array-callback-return
       [req.files.files].flat().map((file) => {
         file.mv("./uploads/" + file.name);
       });
+      
     }
+
 
     fs.writeFile("./uploads/data.json", JSON.stringify(req.body), "utf8", () => {
       res.send({
