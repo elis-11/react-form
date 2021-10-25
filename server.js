@@ -32,8 +32,6 @@ app.post("/", limiter, async (req, res) => {
       });
       
     }
-
-
     fs.writeFile("./uploads/data.json", JSON.stringify(req.body), "utf8", () => {
       res.send({
         status: true,
@@ -43,8 +41,10 @@ app.post("/", limiter, async (req, res) => {
   } catch (e) {
     res.status(500).send(e.message);
   }
+
 });
 
 const port = process.env.PORT || 4000;
 
-app.listen(port, () => console.log(`Server is running on port ${port}`));
+
+app.listen(port, () => console.log(`Server is running on port http://localhost:${port}`));
