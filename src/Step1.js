@@ -52,6 +52,7 @@ export const Step1 = () => {
           helperText={errors?.firstName?.message}
         />
         <Input
+          // ref={...register('lastName')}
           ref={register}
           id="lastName"
           type="text"
